@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Topic from "../Topic/Topic";
 import Navbar from "../../Navbar/Navbar";
 import Banner from "../../Banner/Banner";
+import Bar from "../../Bar/Bar";
 
 import HomeBackground from "../../../images/home1-bg.jpg";
 import TopicsBackground from "../../../images/home1-topic.jpg";
@@ -25,6 +26,7 @@ export default function Page({ history }) {
       }}
       className="page-background"
     >
+      <Bar />
       <Banner history={history}>
         {
           {
