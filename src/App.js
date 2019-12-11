@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import "./App.css";
 import Main from "./components/pages/Main/Main";
-import Home from "./components/pages/Home/Home";
+import Page from "./components/pages/Page/Page";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Main} />
-          <Route path="/home" component={Home} />
+          <Route path="/home" component={Page} />
           {/* <Route exact path="/home/:topic" component={Home} /> */}
         </Switch>
       </Router>
