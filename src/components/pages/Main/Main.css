@@ -1,0 +1,58 @@
+.main-background {
+  background-image: url("../../../images/globe.png");
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.header {
+  position: absolute;
+  left: 336px;
+  top: 158px;
+  color: #f2f2f2;
+  width: 318px;
+  height: 56px;
+  font-size: 45px;
+  line-height: 52px;
+}
+
+.main-logo {
+  background-image: url("../../../images/logo.png");
+  position: absolute;
+  width: 457.5px;
+  height: 110px;
+  left: 266px;
+  top: 430px;
+  background-repeat: no-repeat;
+}
+
+.iconButton {
+  position: absolute;
+  width: 200px;
+  height: 28.64px;
+  left: 318px;
+  top: 787px;
+}
+
+img {
+  color: #f2f2f2;
+  padding: 0 20px;
+}
+
+.button {
+  position: absolute;
+  height: 27px;
+  white-space: nowrap;
+  font-size: 22px;
+  padding: 0;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 0cm;
+}

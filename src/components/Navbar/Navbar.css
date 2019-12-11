@@ -1,0 +1,50 @@
+.navbar {
+  position: absolute;
+  bottom: 44px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-button {
+  color: white;
+  text-align: center;
+  width: 225px;
+  height: 60px;
+  border: none;
+  background: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
+.gradient {
+  position: absolute;
+  width: 100vw;
+  height: 260px;
+  bottom: 0px;
+
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.93) 45.83%,
+    rgba(18, 18, 18, 0) 100%
+  );
+}
+
+.active-bar {
+  background: #55c6d7;
+  width: 125px;
+  height: 5px;
+}
