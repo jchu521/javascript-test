@@ -63,7 +63,12 @@ function Page({ history }) {
     >
       <Bar />
       <div style={{ display: "flex" }}>{page}</div>
-      {pathname === "/home" || pathname === "/topic1" ? (
+      {pathname === "/home" ||
+      pathname === "/topic1" ||
+      pathname === "/topic2" ||
+      pathname === "/topic3" ||
+      pathname === "/topic4" ||
+      pathname === "/topic5" ? (
         <Navbar history={history} />
       ) : null}
     </div>

@@ -44,7 +44,7 @@
 }
 
 .active-bar {
-  background: #55c6d7;
-  width: 125px;
+  margin: 0;
+  background-color: #55c6d7;
   height: 5px;
 }

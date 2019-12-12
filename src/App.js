@@ -13,6 +13,10 @@ function App() {
           <Route exact path="/" component={Main} />
           <Route path="/home" component={Page} />
           <Route exact path="/topic1" component={Page} />
+          <Route exact path="/topic2" component={Page} />
+          <Route exact path="/topic3" component={Page} />
+          <Route exact path="/topic4" component={Page} />
+          <Route exact path="/topic5" component={Page} />
           <Route path="/topic1/:page" component={Page} />
         </Switch>
       </Router>
