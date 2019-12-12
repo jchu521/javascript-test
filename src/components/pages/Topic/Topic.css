@@ -56,3 +56,50 @@
   padding-left: 15px;
   margin: 0;
 }
+
+.buttonGroup {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.back-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  border: 1px solid #e0e0e0;
+  background: #e0e0e0;
+}
+
+.next-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 85px;
+  cursor: pointer;
+  border: 1px solid #55c6d7;
+  background: #55c6d7;
+}
+
+.next-button:active {
+  opacity: 0.9;
+}
+
+.text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}

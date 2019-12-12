@@ -1,13 +1,29 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { withRouter } from "react-router";
 import logo from "../../../images/home-logo.png";
 
 import "./Topic.css";
 
-export default function Topic({ history }) {
-  const { pathname } = history.location;
+function Topic(props) {
+  const { pathname } = props.history.location;
+  const backToPerviousPage = () => {
+    const { page } = props.match.params;
+
+    if (page === "1") {
+      props.history.push("/topic1");
+    } else {
+      props.history.push(`/topic1/${page - 1}`);
+    }
+  };
+
+  const toNextPage = () => {
+    const { page } = props.match.params;
+    props.history.push(`/topic1/${parseInt(page) + 1}`);
+  };
 
   return (
     <>
@@ -30,7 +46,7 @@ export default function Topic({ history }) {
           </div>
         </>
       )}
-      {pathname === "/topic1/1" && (
+      {pathname.includes("/topic1/") && (
         <div
           style={{ width: 360, padding: "70px 0 0 85px" }}
           className="topics-context"
@@ -46,8 +62,20 @@ export default function Topic({ history }) {
               sit amet.
             </p>
           </div>
+          <div className="buttonGroup">
+            <button onClick={backToPerviousPage} className="back-button">
+              <FontAwesomeIcon icon={faAngleLeft} size="lg" />
+              <span className="text">Back</span>
+            </button>
+            <button onClick={toNextPage} className="next-button">
+              <FontAwesomeIcon icon={faAngleRight} size="2x" />
+              <span className="text">Next</span>
+            </button>
+          </div>
         </div>
       )}
     </>
   );
 }
+
+export default withRouter(Topic);

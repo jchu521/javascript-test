@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 
+import { withRouter } from "react-router";
+
 import Home from "../Home/Home";
 import Topic from "../Topic/Topic";
 import Navbar from "../../Navbar/Navbar";
@@ -12,28 +14,28 @@ import TopicsPage1Background from "../../../images/topic1-1-background.jpg";
 
 import "./Page.css";
 
-export default function Page({ history }) {
+function Page({ history, match }) {
   const { pathname } = history.location;
   const [page, setPage] = useState(<Home />);
+  const [backgroundImg, setBackgroundImg] = useState(HomeBackground);
 
   useEffect(() => {
     if (pathname === "/home") {
       setPage(<Home />);
-    } else if (pathname.includes("/topic1")) {
+      setBackgroundImg(HomeBackground);
+    } else if (pathname === "/topic1") {
       setPage(<Topic history={history} />);
+      setBackgroundImg(TopicsBackground);
+    } else if (pathname.includes("/topic1/")) {
+      setPage(<Topic history={history} />);
+      setBackgroundImg(TopicsPage1Background);
     }
   }, [pathname, history]);
 
   return (
     <div
       style={{
-        backgroundImage: `url(${
-          {
-            "/home": HomeBackground,
-            "/topic1": TopicsBackground,
-            "/topic1/1": TopicsPage1Background
-          }[pathname]
-        })`
+        backgroundImage: `url(${backgroundImg})`
       }}
       className="page-background"
     >
@@ -45,3 +47,5 @@ export default function Page({ history }) {
     </div>
   );
 }
+
+export default withRouter(Page);
