@@ -16,7 +16,6 @@
 
 .topics-context {
   color: white;
-  padding: 160px 0 0 70px;
 }
 
 .topics-button {
@@ -28,4 +27,32 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
+  cursor: pointer;
+}
+
+.topics-subheader {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.1em;
+}
+
+.topics-sidebar {
+  width: 5px;
+  background: #55c6d7;
+  opacity: 0.95;
+}
+
+.topics-p {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.03em;
+  width: 240px;
+  padding-left: 15px;
+  margin: 0;
 }

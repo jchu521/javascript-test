@@ -24,31 +24,31 @@ export default function Navbar({ history }) {
           </button>
           <button
             className="nav-button"
-            onClick={() => handleRedirect("/home/topic1")}
+            onClick={() => handleRedirect("/topic1")}
           >
             Topic 1
           </button>
           <button
             className="nav-button"
-            onClick={() => handleRedirect("/home/topic1")}
+            onClick={() => handleRedirect("/topic1")}
           >
             Topic 2
           </button>
           <button
             className="nav-button"
-            onClick={() => handleRedirect("/home/topic1")}
+            onClick={() => handleRedirect("/topic1")}
           >
             Topic 3
           </button>
           <button
             className="nav-button"
-            onClick={() => handleRedirect("/home/topic1")}
+            onClick={() => handleRedirect("/topic1")}
           >
             Topic 4
           </button>
           <button
             className="nav-button"
-            onClick={() => handleRedirect("/home/topic1")}
+            onClick={() => handleRedirect("/topic1")}
           >
             Topic 5
           </button>

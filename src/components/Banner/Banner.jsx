@@ -8,7 +8,7 @@ export default function Banner({ children, history }) {
     <div
       style={{
         background: `${
-          pathname.includes("/home")
+          pathname === "/home" || pathname === "/topic1"
             ? "#172843"
             : "linear-gradient(90deg, rgba(0, 0, 0, 0.93) 76.12%, rgba(0, 0, 0, 0) 95.93%)"
         }`
