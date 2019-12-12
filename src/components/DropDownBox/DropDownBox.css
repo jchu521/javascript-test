@@ -1,0 +1,29 @@
+.dropdownbox-container {
+  padding-bottom: 10px;
+}
+
+.dropdownbox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #55c6d7;
+  height: 70;
+}
+
+.dropdownbox-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 12px 32px;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.dropdownbox-body {
+  padding: 27px 32px;
+  background: #ffffff;
+}
